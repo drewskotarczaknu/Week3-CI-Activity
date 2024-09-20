@@ -1,9 +1,13 @@
 name: CI Instructions
 
 on:
-  [commit, pull]:
+  commit:
     branches:
       - main
+  pull:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   test:
